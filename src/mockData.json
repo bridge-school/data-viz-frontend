@@ -1,0 +1,25 @@
+{
+  "gender": [
+    { "x": "woman", "y": 300 },
+    { "x": "men", "y": 50 },
+    { "x": "non", "y": 10 }
+  ],
+
+  "bootcamp": [
+    { "x": "Hackeryou", "y": 200 },
+    { "x": "bootcamp", "y": 300 },
+    { "x": "never", "y": 200 }
+  ],
+
+  "minority": [
+    { "x": "colors", "y": 50 },
+    { "x": "minority", "y": 10 },
+    { "x": "non", "y": 20 }
+  ],
+
+  "employment": [
+    { "x": "employed", "y": 150 },
+    { "x": "unemployed", "y": 10 },
+    { "x": "school", "y": 4 }
+  ]
+}

@@ -1,23 +1,23 @@
 import React from 'react';
 import Navigation from './Navigation';
 import BarGraph from './BarGraph';
-
-const gender = [
-  { x: 'woman', y: 300 },
-  { x: 'men', y: 50 },
-  { x: 'non', y: 10 }
-];
+import mockData from '../mockData.json';
 
 class CohortDetail extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: gender };
+    // set data to show gender identity by defalut
+    this.state = { data: mockData.gender };
   }
 
+  handleDataChange = key => this.setState({ data: mockData[key] });
+
   render() {
+    // create an array of keys to pass to Navigation
+    const keys = Object.keys(mockData);
     return (
       <>
-        <Navigation />
+        <Navigation onChange={this.handleDataChange} keys={keys} />
         <BarGraph id={this.props.match.params.id} data={this.state.data} />
       </>
     );
