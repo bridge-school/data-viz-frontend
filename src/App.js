@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="wrapper">
         <Switch>
           <Route exact path="/" component={CohortList} />
           <Route path="/cohorts/:id" component={CohortDetail} />
