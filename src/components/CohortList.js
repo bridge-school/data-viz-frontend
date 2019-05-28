@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItem from './ListItem';
 
-const fakeIds = [7, 6, 5, 4, 3, 2, 1];
+const fakeIds = ['7', '6', '5', '4'];
 
 const CohortList = props => {
   return (
