@@ -7,6 +7,7 @@ const buttonNames = {
   bootcamp: 'dev bootcamp',
   employment: 'employment status'
 };
+const keys = Object.keys(buttonNames);
 
 class Navigation extends React.Component {
   handleClick = key => {
@@ -17,7 +18,7 @@ class Navigation extends React.Component {
     return (
       <aside>
         <nav>
-          {this.props.keys.map(key => (
+          {keys.map(key => (
             // when button is clicked, pass the key back to setState
             <button onClick={() => this.handleClick(key)} key={key}>
               {buttonNames[key]}
