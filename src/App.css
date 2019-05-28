@@ -1,16 +1,120 @@
-nav,
-h2,
-aside,
-section {
-  display: inline-block;
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-nav,
-h2 {
-  margin-right: 50px;
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* setup to remove default styling */
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Default button styles */
+.link--pink,
+button {
+  border-radius: 10px;
+  background: #eb2c97;
+  color: #fff;
+  padding: 1.5% 2%;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  font-size: 16px;
+}
+
+.link--pink:hover,
+.link--pink:focus,
+button:hover,
+button:focus {
+  background: #bb2177;
+}
+
+/* centers content on page */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background: #4e57ca;
+  transition: 0.3s all ease-in-out;
+}
+
+header:hover header:focus {
+  background: #6971d4;
+}
+
+header a {
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #fff;
+}
+
+header img {
+  width: 15%;
+  max-width: 70px;
+  padding-right: 20px;
+}
+
+.heading a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Main Styles */
+
+main h1 {
+  font-weight: 700;
+}
+
+
+/* List styles */
+
+li {
+  background: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+}
+
+li:hover,
+li:focus {
+  box-shadow: 7px 7px 0 0 #d2d1d1;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+aside {
+  background: #f4f4f4;
+  width: 30%;
 }
 
 button {
-  display: block;
-  margin: 20px;
+  margin-bottom: 8%;
+  padding: 5% 2%;
+
 }

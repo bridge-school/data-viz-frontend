@@ -5,7 +5,7 @@ const ListItem = props => {
   return (
     <li>
       <h2>Cohort {props.id}</h2>
-      <Link to={`/cohorts/${props.id}`}>frontend development</Link>
+      <Link className="link--pink" to={`/cohorts/${props.id}`}>frontend development</Link>
     </li>
   );
 };
