@@ -23,14 +23,12 @@ class CohortDetail extends React.Component {
   };
 
   render() {
-    // create an array of keys to pass to Navigation
     const { id } = this.props.match.params;
     const { data, loading, button } = this.state;
-    const keys = Object.keys(data);
 
     return (
       <>
-        <Navigation onChange={this.handleDataChange} keys={keys} />
+        <Navigation onChange={this.handleDataChange} />
         {loading ? 'loading' : <BarGraph id={id} data={data[button]} />}
       </>
     );
