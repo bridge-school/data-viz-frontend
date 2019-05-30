@@ -1,22 +1,24 @@
 import React from 'react';
+import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
 
 const BarGraph = props => {
   return (
     <section>
       <h2>Cohort {props.id}</h2>
-      {/* use svg for now, we can change to library later */}
-      <svg width="50%" height="100">
-        {props.data.map((value, index) => (
-          <rect
-            key={index}
-            x={index * 80}
-            y={100 - value.y}
-            width="30"
-            height={value.y}
-            fill="#2fa1d4"
-          />
-        ))}
-      </svg>
+
+      <VictoryChart domainPadding={{ x: 50 }}>
+        <VictoryAxis dependentAxis />
+        <VictoryAxis />
+        <VictoryBar
+          data={props.data}
+          barWidth={40}
+          style={{
+            data: {
+              fill: '#4e57ca'
+            }
+          }}
+        />
+      </VictoryChart>
     </section>
   );
 };
