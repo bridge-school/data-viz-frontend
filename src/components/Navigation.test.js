@@ -11,7 +11,7 @@ describe("Navigation", () => {
     it('runs onChange handler from props when clicked', () => {
         const onChange = jest.fn();
       const wrapper = shallow(<Navigation keys={[1]} onChange={onChange}/>)
-      wrapper.find('button')
+      wrapper.find('button').first()
       .simulate('click')
       expect(onChange)
         .toHaveBeenCalled()
