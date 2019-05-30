@@ -6,19 +6,30 @@ import mockData from '../mockData.json';
 class CohortDetail extends React.Component {
   constructor(props) {
     super(props);
-    // set data to show gender identity by defalut
-    this.state = { data: mockData.gender };
+    // add loading state
+    this.state = { loading: true, data: {}, button: 'gender' };
   }
 
-  handleDataChange = key => this.setState({ data: mockData[key] });
+  componentDidMount() {
+    // this will be async after fetch
+    this.setState({
+      loading: false,
+      data: mockData[this.props.match.params.id]
+    });
+  }
+
+  handleDataChange = key => {
+    this.setState({ button: key });
+  };
 
   render() {
-    // create an array of keys to pass to Navigation
-    const keys = Object.keys(mockData);
+    const { id } = this.props.match.params;
+    const { data, loading, button } = this.state;
+
     return (
       <>
-        <Navigation onChange={this.handleDataChange} keys={keys} />
-        <BarGraph id={this.props.match.params.id} data={this.state.data} />
+        <Navigation onChange={this.handleDataChange} />
+        {loading ? 'loading' : <BarGraph id={id} data={data[button]} />}
       </>
     );
   }

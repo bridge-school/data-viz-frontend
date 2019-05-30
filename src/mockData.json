@@ -1,25 +1,105 @@
 {
-  "gender": [
-    { "x": "woman", "y": 300 },
-    { "x": "men", "y": 50 },
-    { "x": "non", "y": 10 }
-  ],
+  "4": {
+    "gender": [
+      { "x": "woman", "y": 10 },
+      { "x": "men", "y": 50 },
+      { "x": "non", "y": 10 }
+    ],
 
-  "bootcamp": [
-    { "x": "Hackeryou", "y": 200 },
-    { "x": "bootcamp", "y": 300 },
-    { "x": "never", "y": 200 }
-  ],
+    "bootcamp": [
+      { "x": "Hackeryou", "y": 20 },
+      { "x": "bootcamp", "y": 30 },
+      { "x": "never", "y": 200 }
+    ],
 
-  "minority": [
-    { "x": "colors", "y": 50 },
-    { "x": "minority", "y": 10 },
-    { "x": "non", "y": 20 }
-  ],
+    "minority": [
+      { "x": "colors", "y": 50 },
+      { "x": "minority", "y": 10 },
+      { "x": "non", "y": 20 }
+    ],
 
-  "employment": [
-    { "x": "employed", "y": 150 },
-    { "x": "unemployed", "y": 10 },
-    { "x": "school", "y": 4 }
-  ]
+    "employment": [
+      { "x": "employed", "y": 50 },
+      { "x": "unemployed", "y": 10 },
+      { "x": "school", "y": 4 }
+    ]
+  },
+
+  "5": {
+    "gender": [
+      { "x": "woman", "y": 50 },
+      { "x": "men", "y": 10 },
+      { "x": "non", "y": 10 }
+    ],
+
+    "bootcamp": [
+      { "x": "Hackeryou", "y": 200 },
+      { "x": "bootcamp", "y": 300 },
+      { "x": "never", "y": 200 }
+    ],
+
+    "minority": [
+      { "x": "colors", "y": 50 },
+      { "x": "minority", "y": 10 },
+      { "x": "non", "y": 20 }
+    ],
+
+    "employment": [
+      { "x": "employed", "y": 150 },
+      { "x": "unemployed", "y": 10 },
+      { "x": "school", "y": 4 }
+    ]
+  },
+
+  "6": {
+    "gender": [
+      { "x": "woman", "y": 300 },
+      { "x": "men", "y": 50 },
+      { "x": "non", "y": 10 }
+    ],
+
+    "bootcamp": [
+      { "x": "Hackeryou", "y": 100 },
+      { "x": "bootcamp", "y": 30 },
+      { "x": "never", "y": 20 }
+    ],
+
+    "minority": [
+      { "x": "colors", "y": 50 },
+      { "x": "minority", "y": 10 },
+      { "x": "non", "y": 20 }
+    ],
+
+    "employment": [
+      { "x": "employed", "y": 150 },
+      { "x": "unemployed", "y": 10 },
+      { "x": "school", "y": 4 }
+    ]
+  },
+
+  "7": {
+    "gender": [
+      { "x": "woman", "y": 300 },
+      { "x": "men", "y": 10 },
+      { "x": "non", "y": 20 }
+    ],
+
+    "bootcamp": [
+      { "x": "Hackeryou", "y": 10 },
+      { "x": "bootcamp", "y": 30 },
+      { "x": "never", "y": 30 }
+    ],
+
+    "minority": [
+      { "x": "colors", "y": 50 },
+      { "x": "minority", "y": 100 },
+      { "x": "non", "y": 20 }
+    ],
+
+    "employment": [
+      { "x": "employed", "y": 150 },
+      { "x": "unemployed", "y": 100 },
+      { "x": "school", "y": 40 }
+    ]
+  }
 }
