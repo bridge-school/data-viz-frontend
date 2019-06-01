@@ -1,17 +1,20 @@
 import React from 'react';
 import ListItem from './ListItem';
+import LineGraph from './LineGraph';
 
-const fakeIds = ['7', '6', '5', '4'];
+//connect to redux store later to get ids
+const ids = ['7', '6', '5', '4'];
 
 const CohortList = props => {
   return (
     <>
       <h1>Cohorts</h1>
       <ul>
-        {fakeIds.map(id => (
+        {ids.map(id => (
           <ListItem key={id} id={id} />
         ))}
       </ul>
+      <LineGraph />
     </>
   );
 };

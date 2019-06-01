@@ -6,7 +6,7 @@ import mockData from '../mockData.json';
 class CohortDetail extends React.Component {
   constructor(props) {
     super(props);
-    // add loading state
+    // connect to redux store later
     this.state = { loading: true, data: {}, button: 'gender' };
   }
 
