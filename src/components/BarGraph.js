@@ -6,7 +6,10 @@ const BarGraph = props => {
     <section>
       <h2>Cohort {props.id}</h2>
 
-      <VictoryChart domainPadding={{ x: 50 }}>
+      <VictoryChart
+        domainPadding={{ x: 50 }}
+        animate={{ duration: 1000, easing: 'expOut' }}
+      >
         <VictoryAxis dependentAxis />
         <VictoryAxis />
         <VictoryBar
