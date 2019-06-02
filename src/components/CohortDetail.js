@@ -11,6 +11,9 @@ class CohortDetail extends React.Component {
   }
 
   componentDidMount() {
+    //TODO: dispatch action to change loading to false when component mounted
+    //TODO: move state to mapStateToProps
+
     // this will be async after fetch
     this.setState({
       loading: false,
@@ -18,6 +21,7 @@ class CohortDetail extends React.Component {
     });
   }
 
+  //TODO: change to dispatching an action
   handleDataChange = key => {
     this.setState({ button: key });
   };

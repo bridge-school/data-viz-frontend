@@ -7,8 +7,11 @@
     "enzyme-adapter-react-16": "^1.13.2",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
+    "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "victory": "^32.2.3"
   },
   "scripts": {
