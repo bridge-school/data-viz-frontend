@@ -38,7 +38,12 @@ button {
 .link--pink:focus,
 button:hover,
 button:focus {
-  background: #bb2177;
+  box-shadow: 5px 5px 0 0 #d2d1d1;
+}
+
+button {
+  margin-bottom: 8%;
+  padding: 5% 2%;
 }
 
 /* centers content on page */
@@ -47,13 +52,22 @@ button:focus {
   margin: 0 auto;
 }
 
+
 /* Header Styles */
 header {
   background: #4e57ca;
   transition: 0.3s all ease-in-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 85px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
 }
 
-header:hover header:focus {
+header:hover,
+header:focus {
   background: #6971d4;
 }
 
@@ -82,8 +96,16 @@ main h1 {
   font-weight: 700;
 }
 
+main h2 {
+  margin: 2% 0;
+}
+
 
 /* List styles */
+
+.bridge--cohorts {
+  padding-top: 115px;
+}
 
 li {
   background: #f0f0f0;
@@ -97,9 +119,17 @@ li {
   transition: 0.3s all ease-in-out;
 }
 
-li:hover,
-li:focus {
-  box-shadow: 7px 7px 0 0 #d2d1d1;
+.results--container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  background: #f4f4f4;
+  width: 30%;
+  padding: 115px 3% 0 10%;
 }
 
 nav {
@@ -108,13 +138,37 @@ nav {
   justify-content: space-around;
 }
 
-aside {
-  background: #f4f4f4;
-  width: 30%;
+section {
+  width: 70%;
+  padding: 115px 10% 0 5%;
 }
 
-button {
-  margin-bottom: 8%;
-  padding: 5% 2%;
+section h2 {
+  margin-top: 0;
+}
 
+/* Media queries */
+
+@media (max-width: 939px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  aside {
+    padding-left: 5%;
+  }
+
+  section {
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 5vw;
+  }
+
+  button {
+    font-size: 2vw;
+  }
 }
