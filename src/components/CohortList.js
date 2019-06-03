@@ -7,7 +7,7 @@ const ids = ['7', '6', '5', '4'];
 
 const CohortList = props => {
   return (
-    <>
+    <div className="wrapper bridge--cohorts">
       <h1>Cohorts</h1>
       <ul>
         {ids.map(id => (
@@ -15,7 +15,7 @@ const CohortList = props => {
         ))}
       </ul>
       <LineGraph />
-    </>
+    </div>
   );
 };
 

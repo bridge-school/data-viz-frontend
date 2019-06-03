@@ -31,10 +31,10 @@ class CohortDetail extends React.Component {
     const { data, loading, button } = this.state;
 
     return (
-      <>
+      <div className="results--container">
         <Navigation onChange={this.handleDataChange} />
         {loading ? 'loading' : <BarGraph id={id} data={data[button]} />}
-      </>
+      </div>
     );
   }
 }
