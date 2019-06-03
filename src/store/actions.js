@@ -24,7 +24,7 @@ export const fetchData = () => {
     return (dispatch) => {
         dispatch(startAPI());
         // fetch(`http://data-viz-backend.bridgeschoolapp.io/cohorts`)
-        fetch('https://api.github.com/users/bridge-school')
+        fetch('https://localhost:8081')
             .then(res => !res.ok ? Promise.reject('Something went wrong :(') : res.json())
             .then(data => {
                 dispatch(apiSuccessful(data));
