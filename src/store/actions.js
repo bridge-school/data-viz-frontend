@@ -17,14 +17,12 @@ export const apiFailed = () => ({
     type: 'API_CALL_FAILED'
 });
 
-//TODO: change CORS on back end & change api source
 
 //fetchData works! passed dummy fetch to check pushing to state
 export const fetchData = () => {
     return (dispatch) => {
         dispatch(startAPI());
-        // fetch(`http://data-viz-backend.bridgeschoolapp.io/cohorts`)
-        fetch('https://localhost:8081')
+        fetch(`http://data-viz-backend.bridgeschoolapp.io/cohorts/?id`)
             .then(res => !res.ok ? Promise.reject('Something went wrong :(') : res.json())
             .then(data => {
                 dispatch(apiSuccessful(data));
