@@ -10,6 +10,9 @@ const BarGraph = props => {
         domainPadding={{ x: 50 }}
         animate={{ duration: 1000, easing: 'expOut' }}
       >
+
+        {/* //TODO: add labels to VictoryAxis components like this:*/}
+        {/* <VictoryAxis label="Time (ms)" /> */}
         <VictoryAxis dependentAxis />
         <VictoryAxis />
         <VictoryBar

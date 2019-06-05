@@ -1,105 +1,106 @@
 {
   "4": {
     "gender": [
-      { "x": "woman", "y": 10 },
-      { "x": "men", "y": 50 },
-      { "x": "non", "y": 10 }
+      { "label": "woman", "value": 10 },
+      { "label": "man", "value": 50 },
+      { "label": "non-binary", "value": 10 }
     ],
 
+
     "bootcamp": [
-      { "x": "Hackeryou", "y": 20 },
-      { "x": "bootcamp", "y": 30 },
-      { "x": "never", "y": 200 }
+      { "label": "hackeryou", "value": 20 },
+      { "label": "bootcamp", "value": 30 },
+      { "label": "no bootcamp", "value": 200 }
     ],
 
     "minority": [
-      { "x": "colors", "y": 50 },
-      { "x": "minority", "y": 10 },
-      { "x": "non", "y": 20 }
+      { "label": "colors", "value": 50 },
+      { "label": "minority", "value": 10 },
+      { "label": "non", "value": 20 }
     ],
 
     "employment": [
-      { "x": "employed", "y": 50 },
-      { "x": "unemployed", "y": 10 },
-      { "x": "school", "y": 4 }
+      { "label": "employed", "value": 50 },
+      { "label": "unemployed", "value": 10 },
+      { "label": "school", "value": 4 }
     ]
   },
 
   "5": {
     "gender": [
-      { "x": "woman", "y": 50 },
-      { "x": "men", "y": 10 },
-      { "x": "non", "y": 10 }
+      { "label": "woman", "value": 50 },
+      { "label": "men", "value": 10 },
+      { "label": "non", "value": 10 }
     ],
 
     "bootcamp": [
-      { "x": "Hackeryou", "y": 200 },
-      { "x": "bootcamp", "y": 300 },
-      { "x": "never", "y": 200 }
+      { "label": "Hackeryou", "value": 200 },
+      { "label": "bootcamp", "value": 300 },
+      { "label": "never", "value": 200 }
     ],
 
     "minority": [
-      { "x": "colors", "y": 50 },
-      { "x": "minority", "y": 10 },
-      { "x": "non", "y": 20 }
+      { "label": "colors", "value": 50 },
+      { "label": "minority", "value": 10 },
+      { "label": "non", "value": 20 }
     ],
 
     "employment": [
-      { "x": "employed", "y": 150 },
-      { "x": "unemployed", "y": 10 },
-      { "x": "school", "y": 4 }
+      { "label": "employed", "value": 150 },
+      { "label": "unemployed", "value": 10 },
+      { "label": "school", "value": 4 }
     ]
   },
 
   "6": {
     "gender": [
-      { "x": "woman", "y": 300 },
-      { "x": "men", "y": 50 },
-      { "x": "non", "y": 10 }
+      { "label": "woman", "value": 300 },
+      { "label": "men", "value": 50 },
+      { "label": "non", "value": 10 }
     ],
 
     "bootcamp": [
-      { "x": "Hackeryou", "y": 100 },
-      { "x": "bootcamp", "y": 30 },
-      { "x": "never", "y": 20 }
+      { "label": "Hackeryou", "value": 100 },
+      { "label": "bootcamp", "value": 30 },
+      { "label": "never", "value": 20 }
     ],
 
     "minority": [
-      { "x": "colors", "y": 50 },
-      { "x": "minority", "y": 10 },
-      { "x": "non", "y": 20 }
+      { "label": "colors", "value": 50 },
+      { "label": "minority", "value": 10 },
+      { "label": "non", "value": 20 }
     ],
 
     "employment": [
-      { "x": "employed", "y": 150 },
-      { "x": "unemployed", "y": 10 },
-      { "x": "school", "y": 4 }
+      { "label": "employed", "value": 150 },
+      { "label": "unemployed", "value": 10 },
+      { "label": "school", "value": 4 }
     ]
   },
 
   "7": {
     "gender": [
-      { "x": "woman", "y": 300 },
-      { "x": "men", "y": 10 },
-      { "x": "non", "y": 20 }
+      { "label": "woman", "value": 300 },
+      { "label": "men", "value": 10 },
+      { "label": "non", "value": 20 }
     ],
 
     "bootcamp": [
-      { "x": "Hackeryou", "y": 10 },
-      { "x": "bootcamp", "y": 30 },
-      { "x": "never", "y": 30 }
+      { "label": "Hackeryou", "value": 10 },
+      { "label": "bootcamp", "value": 30 },
+      { "label": "never", "value": 30 }
     ],
 
     "minority": [
-      { "x": "colors", "y": 50 },
-      { "x": "minority", "y": 100 },
-      { "x": "non", "y": 20 }
+      { "label": "colors", "value": 50 },
+      { "label": "minority", "value": 100 },
+      { "label": "non", "value": 20 }
     ],
 
     "employment": [
-      { "x": "employed", "y": 150 },
-      { "x": "unemployed", "y": 100 },
-      { "x": "school", "y": 40 }
+      { "label": "employed", "value": 150 },
+      { "label": "unemployed", "value": 100 },
+      { "label": "school", "value": 40 }
     ]
   }
 }
