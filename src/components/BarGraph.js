@@ -18,6 +18,8 @@ const BarGraph = props => {
         <VictoryBar
           data={props.data}
           barWidth={40}
+          x="label"
+          y="value"
           style={{
             data: {
               fill: '#4e57ca'

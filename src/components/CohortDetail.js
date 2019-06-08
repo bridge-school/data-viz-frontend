@@ -26,6 +26,8 @@ class CohortDetail extends React.Component {
     this.setState({ button: key });
   };
 
+  //TODO: use id to query back end
+  //TODO:
   render() {
     const { id } = this.props.match.params;
     const { data, loading, button } = this.state;

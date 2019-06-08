@@ -9,7 +9,10 @@ import Header from './components/Header';
 import CohortList from './components/CohortList';
 import CohortDetail from './components/CohortDetail';
 
-
+//TODO: convert to class component, add fetch to componentDidMount
+//can include loading state
+//loading: can keep header, but conditionally render loading component between main tags
+//when loading = true
 const App = (props) => {
   return (
     <>
