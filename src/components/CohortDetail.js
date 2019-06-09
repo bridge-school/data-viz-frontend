@@ -35,7 +35,7 @@ class CohortDetail extends React.Component {
     return (
       <div className="results--container">
         <Navigation onChange={this.handleDataChange} />
-        {loading ? 'loading' : <BarGraph id={id} data={data[button]} />}
+        {/* {loading ? 'loading' : <BarGraph id={id} data={data[button]} />} */}
       </div>
     );
   }
