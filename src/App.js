@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchData } from './store/actions';
@@ -9,20 +9,24 @@ import Header from './components/Header';
 import CohortList from './components/CohortList';
 import CohortDetail from './components/CohortDetail';
 
+class App extends Component {
+  componentDidMount(){
+    this.props.fetchData();
+  }
 
-const App = (props) => {
-  return (
-    <>
-      <Header />
-      <main>
-        <Switch>
-          <Route exact path="/" component={CohortList} />
-          <Route path="/cohorts/:id" component={CohortDetail} />
-        </Switch>
-        <button onClick={props.fetchData}>Click for API data (to be removed later)</button>
-      </main>
-    </>
-  );
+  render(){
+    return (
+      <>
+        <Header />
+        <main>
+          <Switch>
+            <Route exact path="/" component={CohortList} />
+            <Route path="/cohorts/:id" component={CohortDetail} />
+          </Switch>
+        </main>
+      </>
+    );
+  };
 };
 
 const mapStateToProps = state => ({

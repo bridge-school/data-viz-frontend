@@ -22,7 +22,7 @@ export const apiFailed = () => ({
 export const fetchData = () => {
     return (dispatch) => {
         dispatch(startAPI());
-        fetch(`http://data-viz-backend.bridgeschoolapp.io/cohorts/?id`)
+        fetch(`http://data-viz-backend.bridgeschoolapp.io/application`)
             .then(res => !res.ok ? Promise.reject('Something went wrong :(') : res.json())
             .then(data => {
                 dispatch(apiSuccessful(data));
