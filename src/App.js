@@ -9,7 +9,7 @@ import Header from './components/Header';
 import CohortList from './components/CohortList';
 import CohortDetail from './components/CohortDetail';
 
-class App extends React.Component {
+class App extends Component {
   componentDidMount(){
     this.props.fetchData();
   }
