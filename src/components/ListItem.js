@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ListItem = props => {
   return (
     <li>
-      <h2>Cohort {props.id}</h2>
+      <h2>{props.id}</h2>
       <Link className="link--pink" to={`/cohorts/${props.id}`}>frontend development</Link>
     </li>
   );
