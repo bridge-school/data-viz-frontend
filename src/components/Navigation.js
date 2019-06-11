@@ -5,7 +5,7 @@ const buttonNames = {
   gender: 'gender identity',
   minority: 'minority groups',
   bootcamp: 'dev bootcamp',
-  employment: 'employment status'
+  employment_status: 'employment status'
 };
 const keys = Object.keys(buttonNames);
 

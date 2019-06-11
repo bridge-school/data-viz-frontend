@@ -38,14 +38,13 @@ export const fetchData = () => {
 export const fetchCohort = id => {
   return dispatch => {
     dispatch(startAPI());
-    // fetch(`http://data-viz-backend.bridgeschoolapp.io/cohorts/${id}`)
-    //   .then(res =>
-    //     !res.ok ? Promise.reject('Something went wrong :(') : res.json()
-    //   )
-    //   .then(data => {
-    //     dispatch(cohortsSuccessful(data));
-    //   })
-    //   .catch(() => dispatch(apiFailed()));
-    console.log('testing')
+    fetch(`http://data-viz-backend.bridgeschoolapp.io/cohorts/${id}`)
+      .then(res =>
+        !res.ok ? Promise.reject('Something went wrong :(') : res.json()
+      )
+      .then(data => {
+        dispatch(cohortsSuccessful(data));
+      })
+      .catch(() => dispatch(apiFailed()));
   };
 };
