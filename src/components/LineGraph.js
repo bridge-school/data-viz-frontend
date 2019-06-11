@@ -22,7 +22,8 @@ const LineGraph = (props) => {
       />
       <VictoryAxis
         dependentAxis
-        tickFormat={tick => `${Math.round(tick)}`}
+        // remove decimal value from ticker
+        // tickFormat={tick => `${Math.round(tick)}`}
         label="Number of Applicants"
         style={{
           axisLabel: { padding: 35 }
