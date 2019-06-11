@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Navigation from './Navigation';
-import BarGraph from './BarGraph';
-import mockData from '../mockData.json';
+// import BarGraph from './BarGraph';
+// import mockData from '../mockData.json';
 import { fetchCohort } from '../store/actions';
 
 class CohortDetail extends React.Component {
