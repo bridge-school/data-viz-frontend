@@ -5,15 +5,28 @@ import { VictoryChart, VictoryLine, VictoryAxis } from 'victory';
 const LineGraph = (props) => {
   return (
     <VictoryChart>
-    {/* <VictoryAxis label="Time (ms)" /> */}
       <VictoryLine
         style={{
           data: { stroke: '#eb2c97' }
         }}
-        x='label'
-        y='value'
+        x="label"
+        y="value"
         data={props.applications}
         animate={{ easing: 'sinInOut' }}
+      />
+      <VictoryAxis
+        label="Cohorts"
+        style={{
+          axisLabel: { padding: 30 }
+        }}
+      />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={tick => `${Math.round(tick)}`}
+        label="Number of Applicants"
+        style={{
+          axisLabel: { padding: 35 }
+        }}
       />
     </VictoryChart>
   );
