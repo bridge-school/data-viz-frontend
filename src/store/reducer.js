@@ -25,7 +25,7 @@ const apiReducer = (state = initialState, action) => {
           loading: false,
           results: action.payload
         };
-      
+
       case 'COHORT_CALL_SUCCESSFUL':
         return {
           ...state,

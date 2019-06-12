@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Navigation from './Navigation';
+
 import BarGraph from './BarGraph';
 import { fetchCohort } from '../store/actions';
 import Loader from './Loader.js'
@@ -22,14 +23,19 @@ class CohortDetail extends React.Component {
   };
 
   render() {
+
     const { id } = this.props.match.params;
     const { currentButton } = this.state;
     const { loading, cohortDetails } = this.props;
 
+
     return (
       <div className="results--container">
         <Navigation onChange={this.handleDataChange} />
+
         {(loading) ? <Loader/> : <BarGraph id={id} data={cohortDetails[currentButton]} />}
+
+
       </div>
     );
   }

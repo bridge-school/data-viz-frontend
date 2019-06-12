@@ -45,5 +45,6 @@ export const fetchCohort = id => {
         dispatch(cohortsSuccessful(data));
       })
       .catch(() => dispatch(apiFailed()));
+
   };
 };
