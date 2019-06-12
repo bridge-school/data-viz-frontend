@@ -10,11 +10,21 @@ const BarGraph = props => {
         domainPadding={{ x: 50 }}
         animate={{ duration: 1000, easing: 'expOut' }}
       >
-
-        {/* //TODO: add labels to VictoryAxis components like this:*/}
-        {/* <VictoryAxis label="Time (ms)" /> */}
-        <VictoryAxis dependentAxis />
-        <VictoryAxis />
+        <VictoryAxis
+          label=""
+          style={{
+            axisLabel: { padding: 30 }
+          }}
+        />
+        <VictoryAxis
+          dependentAxis
+          // remove decimal value from ticker
+          // tickFormat={tick => `${Math.round(tick)}`}
+          label="Number of Applicants"
+          style={{
+            axisLabel: { padding: 35 }
+          }}
+        />
         <VictoryBar
           data={props.data}
           barWidth={40}

@@ -20,7 +20,6 @@ export const apiFailed = () => ({
   type: 'API_CALL_FAILED'
 });
 
-//fetchData works! passed dummy fetch to check pushing to state
 export const fetchData = () => {
   return dispatch => {
     dispatch(startAPI());

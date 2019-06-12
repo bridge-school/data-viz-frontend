@@ -4,7 +4,6 @@
 //succeeded = ...state, loading: false, events: action.payload
 //failed = ...initialstate, isloading: false, error: true
 
-
 const initialState = {
     results: [],
     loading: true,
@@ -17,7 +16,8 @@ const apiReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'START_API_CALL':
         return {
-          ...state
+          ...state,
+          loading: true
         };
       case 'API_CALL_SUCCESSFUL':
         return {
@@ -25,6 +25,7 @@ const apiReducer = (state = initialState, action) => {
           loading: false,
           results: action.payload
         };
+      
       case 'COHORT_CALL_SUCCESSFUL':
         return {
           ...state,

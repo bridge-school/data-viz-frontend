@@ -147,6 +147,20 @@ section h2 {
   margin-top: 0;
 }
 
+/* Loader */
+.loader {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  z-index: 42;
+  background: #4e57ca;
+}
+
 /* Media queries */
 
 @media (max-width: 939px) {
