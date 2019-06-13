@@ -30,9 +30,9 @@ class App extends Component {
 };
 
 const mapStateToProps = state => ({
-  results: state.results,
-  loading: state.loading,
-  error: state.error
+  applicants: state.applicants.results,
+  loading: state.applicants.loading,
+  error: state.applicants.error
 });
 
 const mapDispatchToProps = {

@@ -5,34 +5,28 @@
 //failed = ...initialstate, isloading: false, error: true
 
 const initialState = {
-    results: [],
+    applicants: [],
     loading: true,
-    error:false,
-    cohortDetails: []
+    error:false
+    // cohortDetails: []
     // button: 'gender'
 };
 
 const apiReducer = (state = initialState, action) => {
     switch (action.type) {
-      case 'START_API_CALL':
+      case 'START_APPLICANT_CALL':
         return {
           ...state,
           loading: true
         };
-      case 'API_CALL_SUCCESSFUL':
+      case 'APPLICANT_CALL_SUCCESSFUL':
         return {
           ...state,
           loading: false,
-          results: action.payload
+          applicants: action.payload
         };
 
-      case 'COHORT_CALL_SUCCESSFUL':
-        return {
-          ...state,
-          loading: false,
-          cohortDetails: action.payload
-        };
-      case 'API_CALL_FAILED':
+      case 'APPLICANT_CALL_FAILED':
         return {
           ...initialState,
           loading: false,

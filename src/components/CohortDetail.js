@@ -14,7 +14,7 @@ class CohortDetail extends React.Component {
 
   componentDidMount() {
     const { id } = this.props.match.params;
-    this.props.fetchCohort(id);    
+    this.props.fetchCohort(id);
   }
 
   handleDataChange = key => {
@@ -26,14 +26,15 @@ class CohortDetail extends React.Component {
 
     const { id } = this.props.match.params;
     const { currentButton } = this.state;
-    const { loading, cohortDetails } = this.props;
+    // const { cohortLoading, cohortDetails } = this.props.cohorts;
 
 
     return (
       <div className="results--container">
         <Navigation onChange={this.handleDataChange} />
+        {console.log(this.props.cohortDetails)}
 
-        {(loading) ? <Loader/> : <BarGraph id={id} data={cohortDetails[currentButton]} />}
+        {/* {(cohortLoading) ? <Loader/> : <BarGraph id={id} data={cohortDetails[currentButton]} />} */}
 
 
       </div>
@@ -42,9 +43,9 @@ class CohortDetail extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  cohortDetails: state.cohortDetails,
-  loading: state.loading,
-  error: state.error
+  cohortDetails: state.cohorts.cohortDetails,
+  cohortLoading: state.cohorts.cohortLoading,
+  error: state.cohorts.error
 });
 
 const mapDispatchToProps = {
