@@ -26,15 +26,18 @@ class CohortDetail extends React.Component {
 
     const { id } = this.props.match.params;
     const { currentButton } = this.state;
-    // const { cohortLoading, cohortDetails } = this.props.cohorts;
+    const { cohortLoading, cohortDetails } = this.props;
 
 
     return (
       <div className="results--container">
         <Navigation onChange={this.handleDataChange} />
-        {console.log(this.props.cohortDetails)}
 
-        {/* {(cohortLoading) ? <Loader/> : <BarGraph id={id} data={cohortDetails[currentButton]} />} */}
+        {console.log(cohortDetails)}
+        {/* {console.log(cohortLoading)} */}
+        {/* {console.log(this.state)} */}
+
+        {(cohortLoading) ? <Loader/> : <BarGraph id={id} data={cohortDetails[currentButton]} />}
 
 
       </div>

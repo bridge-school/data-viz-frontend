@@ -14,13 +14,13 @@ class CohortList extends Component {
         <h1>Cohorts</h1>
         <ul>
 
-          { this.props.loading ? <Loader/> : this.props.applicants.data.map(id => (
+          { this.props.loading ? <Loader/> : this.props.applicants.map(id => (
             <ListItem key={id.label} id={id.label} />
           )) }
         </ul>
         { this.props.loading ? '' :
 
-        <LineGraph applications={this.props.applicants.data}  />
+        <LineGraph applications={this.props.applicants}  />
         }
       </div>
     );
@@ -28,7 +28,7 @@ class CohortList extends Component {
 };
 
 const mapStateToProps = (state) => ({
-  applicants: state.applicants.applicants,
+  applicants: state.applicants.applicants.data || [],
   loading: state.applicants.loading,
   error: state.applicants.error
 })

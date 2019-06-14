@@ -6,13 +6,14 @@
 
 const initialState = {
     applicants: [],
-    loading: true,
+    loading: false,
     error:false
     // cohortDetails: []
     // button: 'gender'
 };
 
 const apiReducer = (state = initialState, action) => {
+  console.log('apiReducer', state)
     switch (action.type) {
       case 'START_APPLICANT_CALL':
         return {
@@ -33,7 +34,7 @@ const apiReducer = (state = initialState, action) => {
           error: true
         };
       default:
-        return initialState;
+        return state;
     }
 };
 

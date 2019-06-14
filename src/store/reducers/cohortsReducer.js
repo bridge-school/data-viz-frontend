@@ -32,7 +32,7 @@ const cohortsReducer = (state = initialState, action) => {
                 error: true
             };
         default:
-            return initialState;
+            return state;
     }
 };
 

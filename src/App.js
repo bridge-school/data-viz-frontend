@@ -11,7 +11,11 @@ import CohortDetail from './components/CohortDetail';
 
 class App extends Component {
   componentDidMount(){
-    this.props.fetchData();
+
+    if(!this.props.loading) {
+      this.props.fetchData();
+    }
+
   }
 
   render(){
@@ -21,7 +25,7 @@ class App extends Component {
         <main>
           <Switch>
             <Route exact path="/" component={CohortList} />
-            <Route path="/cohorts/:id" component={CohortDetail} />
+            <Route path="/cohorts/:id" component={(CohortDetail)} />
           </Switch>
         </main>
       </>
