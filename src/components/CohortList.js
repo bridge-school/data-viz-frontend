@@ -3,16 +3,14 @@ import ListItem from './ListItem';
 import LineGraph from './LineGraph';
 import { connect } from 'react-redux';
 
-import Loader from './Loader.js'
+import Loader from './Loader.js';
+// import formattedLabel from '../helpers/removeDashCohort';
 
 
 
 class CohortList extends Component {
     render() {
-      let formattedLabel = (data) =>{
-        data.forEach(item => item.label = item.label.replace('-', ' '));
-        return data;
-      };
+
 
     return (
       <div className="wrapper bridge--cohorts">
@@ -25,7 +23,7 @@ class CohortList extends Component {
         </ul>
         { this.props.loading ? '' :
 
-        <LineGraph applications={formattedLabel(this.props.applicants)}  />
+        <LineGraph applications={this.props.applicants}  />
         }
       </div>
     );

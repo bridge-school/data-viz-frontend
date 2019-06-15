@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ListItem = props => {
   return (
     <li>
-      <h2>Cohort {props.id.split("-")[1]}</h2>
+      <h2>{props.id.replace("-", " ")}</h2>
       <Link className="link--pink" to={`/cohorts/${props.id}`}>frontend development</Link>
     </li>
   );
