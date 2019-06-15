@@ -15,7 +15,7 @@ class CohortList extends Component {
             <ListItem key={id.label} id={id.label} />
           )) }
         </ul>
-        { this.props.loading ? '' : 
+        { this.props.loading ? <Loader/> : 
         <LineGraph applications={this.props.results.data}  />
         }
       </div>
