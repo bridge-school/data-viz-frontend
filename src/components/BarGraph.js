@@ -4,17 +4,23 @@ import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
 const BarGraph = props => {
   return (
     <section>
-      <h2>{props.id.replace("-", " ")}</h2>
+      <h2>{props.id.replace('-', ' ')}</h2>
 
       <VictoryChart
         domainPadding={[100, 100]}
         animate={{ duration: 1000, easing: 'expOut' }}
       >
         <VictoryAxis
-          label=""
+          label={props.xLabel}
+          labelPlacement="vertical"
           style={{
-            axisLabel: { padding: 1000 },
-            tickLabels: { angle: 45, fontFamily: 'Open Sans', fontSize: '10px', wordBreak: 'break-all', width: '5%' }
+            tickLabels: {
+              // angle: -45,
+              padding: 20,
+              fontFamily: 'Open Sans',
+              fontSize: '10px',
+              wordBreak: 'break-all'
+            }
           }}
         />
         <VictoryAxis
@@ -23,8 +29,8 @@ const BarGraph = props => {
           // tickFormat={tick => `${Math.round(tick)}`}
           label="Number of Applicants"
           style={{
-            tickLabels: {fontFamily: 'Open Sans', fontSize: '10px'},
-            axisLabel: { padding: 35 }
+            tickLabels: { fontFamily: 'Open Sans', fontSize: '10px' },
+            axisLabel: { padding: 35, fontFamily: 'Open Sans' }
           }}
         />
         <VictoryBar
@@ -33,7 +39,7 @@ const BarGraph = props => {
           x="label"
           y="value"
           style={{
-            labels: { display: 'none' },
+            labels: { display: 'none', fontFamily: 'Open Sans' },
             data: {
               fill: '#4e57ca'
             }
