@@ -1,14 +1,5 @@
 import React from 'react';
 
-// create an object to match button name with keys
-// const buttonNames = {
-//   gender: 'gender identity',
-//   minority: 'minority groups',
-//   bootcamp: 'dev bootcamp',
-//   employment_status: 'employment status'
-// };
-
-
 class Navigation extends React.Component {
   handleClick = key => {
     this.props.onChange(key);
