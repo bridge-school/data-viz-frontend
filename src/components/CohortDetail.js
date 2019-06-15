@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Navigation from './Navigation';
-
 import BarGraph from './BarGraph';
 import { fetchCohort } from '../store/actions';
 import Loader from './Loader.js'

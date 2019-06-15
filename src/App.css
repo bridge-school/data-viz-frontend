@@ -98,6 +98,7 @@ main h1 {
 
 main h2 {
   margin: 2% 0;
+  text-transform: capitalize;
 }
 
 

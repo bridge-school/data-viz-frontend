@@ -11,6 +11,9 @@ export const applicantAPIFailed = () => ({
   type: 'APPLICANT_CALL_FAILED'
 });
 
+export const apiFailed = () => ({
+  type: 'API_CALL_FAILED'
+});
 
 export const fetchData = () => {
   return dispatch => {
