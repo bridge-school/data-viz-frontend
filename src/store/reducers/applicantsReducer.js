@@ -11,7 +11,6 @@ const initialState = {
 };
 
 const apiReducer = (state = initialState, action) => {
-  console.log('apiReducer', state)
     switch (action.type) {
       case 'START_APPLICANT_CALL':
         return {

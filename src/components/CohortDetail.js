@@ -35,7 +35,7 @@ class CohortDetail extends React.Component {
         {cohortLoading ? (
           <Loader />
         ) : (
-          <BarGraph id={id} data={cohortDetails[currentButton]} />
+          <BarGraph id={id} data={cohortDetails[currentButton]} xLabel={buttons[currentButton]}/>
         )}
       </div>
     );
