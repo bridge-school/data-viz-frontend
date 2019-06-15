@@ -33,10 +33,6 @@ class CohortDetail extends React.Component {
       <div className="results--container">
         <Navigation onChange={this.handleDataChange} />
 
-        {console.log(cohortDetails)}
-        {/* {console.log(cohortLoading)} */}
-        {/* {console.log(this.state)} */}
-
         {(cohortLoading) ? <Loader/> : <BarGraph id={id} data={cohortDetails[currentButton]} />}
 
 
