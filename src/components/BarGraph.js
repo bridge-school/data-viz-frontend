@@ -4,7 +4,7 @@ import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
 const BarGraph = props => {
   return (
     <section>
-      <h2>{props.id}</h2>
+      <h2>{props.id.replace("-", " ")}</h2>
 
       <VictoryChart
         domainPadding={[100, 100]}
