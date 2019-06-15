@@ -9,6 +9,11 @@ import Loader from './Loader.js'
 
 class CohortList extends Component {
     render() {
+      let formattedLabel = (data) =>{
+        data.forEach(item => item.label = item.label.replace('-', ' '));
+        return data;
+      };
+
     return (
       <div className="wrapper bridge--cohorts">
         <h1>Cohorts</h1>
@@ -20,7 +25,7 @@ class CohortList extends Component {
         </ul>
         { this.props.loading ? '' :
 
-        <LineGraph applications={this.props.applicants}  />
+        <LineGraph applications={formattedLabel(this.props.applicants)}  />
         }
       </div>
     );
