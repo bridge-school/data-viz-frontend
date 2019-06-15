@@ -3,12 +3,15 @@ import ListItem from './ListItem';
 import LineGraph from './LineGraph';
 import { connect } from 'react-redux';
 
-import Loader from './Loader.js'
+import Loader from './Loader.js';
+// import formattedLabel from '../helpers/removeDashCohort';
 
 
 
 class CohortList extends Component {
     render() {
+
+
     return (
       <div className="wrapper bridge--cohorts">
         <h1>Cohorts</h1>

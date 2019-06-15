@@ -8,8 +8,6 @@ const initialState = {
     applicants: [],
     loading: false,
     error:false
-    // cohortDetails: []
-    // button: 'gender'
 };
 
 const apiReducer = (state = initialState, action) => {

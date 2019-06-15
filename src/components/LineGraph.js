@@ -1,5 +1,7 @@
 import React from 'react';
 import { VictoryChart, VictoryLine, VictoryAxis } from 'victory';
+import formattedLabel from '../helpers/removeDashCohort';
+
 
 // pass this application data in after API working
 const LineGraph = (props) => {
@@ -11,7 +13,7 @@ const LineGraph = (props) => {
         }}
         x="label"
         y="value"
-        data={props.applications}
+        data={formattedLabel(props.applications)}
         animate={{ easing: 'sinInOut' }}
       />
       <VictoryAxis
