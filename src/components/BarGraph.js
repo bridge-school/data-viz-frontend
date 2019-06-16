@@ -6,40 +6,35 @@ const BarGraph = props => {
     <section>
       <h2>{props.id.replace("-", " ")} : {props.xLabel}</h2>
       <VictoryChart
-        domainPadding={[200, 100]}
-        height={350}
+        domainPadding={{ x: 15 }}
+        padding={{ left: 10, top: 10, right: 100, bottom: 50 }}
         animate={{ duration: 1000, easing: 'expOut' }}
       >
         <VictoryAxis
-          label=""
-          style={{
-            // axisLabel: { padding: 1000 },
-            tickLabels: {display:"none"}
-            // tickLabels: { angle: 0, fontFamily: 'Open Sans', fontSize: '10px', wordBreak: 'break-all', width: '5%' }
-          }}
+        style={{
+          tickLabels: { display: 'none' },
+          labels: { fontFamily: 'Open Sans', fontSize: '10px' },
+        }}
         />
         <VictoryAxis
           dependentAxis
-          // remove decimal value from ticker
-          // tickFormat={tick => `${Math.round(tick)}`}
           label="Number of Applicants"
+          domain={[40]}
           style={{
-            tickLabels: {fontFamily: 'Open Sans', fontSize: '10px'},
-            axisLabel: { padding: 35 }
-          }}
+          tickLabels: { fontFamily: 'Open Sans', fontSize: '8px' },
+          axisLabel: { padding: 30, fontFamily: 'Open Sans', fontSize: '10px' }
+        }}
         />
         <VictoryBar horizontal
           data={props.data}
-          // barWidth={40}
           x="label"
           y="value"
           style={{
-            // labels: { display: 'none' },
             data: {
               fill: '#4e57ca',
-              width:30
-              // padding:50
-            }
+              width:30,
+            },
+            labels: {fontFamily: 'Open Sans', fontSize: 10}
           }}
         />
       </VictoryChart>
