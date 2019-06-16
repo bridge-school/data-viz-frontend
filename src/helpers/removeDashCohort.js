@@ -1,6 +1,6 @@
 let formattedLabel = obj => {
-  obj.forEach(item => (item.label = item.label.replace('-', ' ')));
-  return obj;
+  let newName = obj.forEach(item => (item.label = item.label.replace('-', ' ')));
+  return newName;
 };
 
 export default formattedLabel;
