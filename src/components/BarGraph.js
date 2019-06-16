@@ -7,7 +7,7 @@ const BarGraph = props => {
       <h2>{props.id.replace("-", " ")} : {props.xLabel}</h2>
       <VictoryChart
         domainPadding={{ x: 15 }}
-        padding={{ left: 10, top: 10, right: 100, bottom: 50 }}
+        padding={{ left: 0, top: 10, right: 100, bottom: 50 }}
         animate={{ duration: 1000, easing: 'expOut' }}
       >
         <VictoryAxis
