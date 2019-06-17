@@ -16,7 +16,7 @@ describe('Cohort Detail', () => {
     const onChange = jest.fn();
   it('renders div', () => {
     const wrapper = shallow(<CohortDetail match={match} cohortDetails={cohortDetails[currentButton]} buttons={currentButton} fetchCohort={props} />);
-    expect(wrapper.find('div')
+    expect(wrapper.find('div.results--container')
         .exists())
         .toBe(true) 
 });
