@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { CohortDetail } from './CohortDetail.js';
 import Navigation from './Navigation.js';
-import BarGraph from './BarGraph.js';
 
 describe('Cohort Detail', () => {
     // Setup
