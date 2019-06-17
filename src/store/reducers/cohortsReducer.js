@@ -5,11 +5,17 @@
 //failed = ...initialstate, isloading: false, error: true
 
 const initialState = {
-    // applicants: [],
-    cohortLoading: true,
-    error: false,
-    cohortDetails: []
-    // button: 'gender'
+  // applicants: [],
+  cohortLoading: true,
+  error: false,
+  cohortDetails: [],
+  buttonNames: {
+    gender: 'gender identity',
+    minority: 'minority groups',
+    bootcamp: 'dev bootcamp',
+    employment_status: 'employment status'
+  }
+
 };
 
 const cohortsReducer = (state = initialState, action) => {

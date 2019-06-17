@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 
 describe('ListItem', () => {
   it('renders list item', () => {
-    const wrapper = shallow(<ListItem />);
+
+    const wrapper = shallow(<ListItem key="" id=""/>);
+
     expect(wrapper.find('li').exists()).toBe(true);
     expect(wrapper.find(Link).exists()).toBe(true);
   });

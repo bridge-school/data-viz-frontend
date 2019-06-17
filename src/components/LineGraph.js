@@ -7,6 +7,8 @@ const LineGraph = (props) => {
     <VictoryChart>
       <VictoryLine
         style={{
+          labels: { display: 'none' },
+          tickLabels: { fontFamily: 'Open Sans', fontSize: '8px' },
           data: { stroke: '#eb2c97' }
         }}
         x="label"
@@ -17,7 +19,8 @@ const LineGraph = (props) => {
       <VictoryAxis
         label="Cohorts"
         style={{
-          axisLabel: { padding: 30 }
+          tickLabels: { fontFamily: 'Open Sans', fontSize: '8px' },
+          axisLabel: { padding: 30, fontFamily: 'Open Sans', fontSize: '12px' }
         }}
       />
       <VictoryAxis
@@ -26,7 +29,8 @@ const LineGraph = (props) => {
         // tickFormat={tick => `${Math.round(tick)}`}
         label="Number of Applicants"
         style={{
-          axisLabel: { padding: 35 }
+          tickLabels: { fontFamily: 'Open Sans', fontSize: '8px' },
+          axisLabel: { padding: 35, fontFamily: 'Open Sans', fontSize: '12px' }
         }}
       />
     </VictoryChart>

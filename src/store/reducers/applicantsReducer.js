@@ -8,12 +8,9 @@ const initialState = {
     applicants: [],
     loading: false,
     error:false
-    // cohortDetails: []
-    // button: 'gender'
 };
 
 const apiReducer = (state = initialState, action) => {
-  console.log('apiReducer', state)
     switch (action.type) {
       case 'START_APPLICANT_CALL':
         return {

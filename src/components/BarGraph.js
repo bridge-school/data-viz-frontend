@@ -4,36 +4,37 @@ import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
 const BarGraph = props => {
   return (
     <section>
-      <h2>Cohort {props.id}</h2>
-
+      <h2>{props.id.replace("-", " ")} : {props.xLabel}</h2>
       <VictoryChart
-        domainPadding={{ x: 50 }}
+        domainPadding={{ x: 15 }}
+        padding={{ left: 0, top: 10, right: 100, bottom: 50 }}
         animate={{ duration: 1000, easing: 'expOut' }}
       >
         <VictoryAxis
-          label=""
-          style={{
-            axisLabel: { padding: 30 }
-          }}
+        style={{
+          tickLabels: { display: 'none' },
+          labels: { fontFamily: 'Open Sans', fontSize: '10px' },
+        }}
         />
         <VictoryAxis
           dependentAxis
-          // remove decimal value from ticker
-          // tickFormat={tick => `${Math.round(tick)}`}
           label="Number of Applicants"
+          domain={[40]}
           style={{
-            axisLabel: { padding: 35 }
-          }}
+          tickLabels: { fontFamily: 'Open Sans', fontSize: '8px' },
+          axisLabel: { padding: 30, fontFamily: 'Open Sans', fontSize: '10px' }
+        }}
         />
-        <VictoryBar
+        <VictoryBar horizontal
           data={props.data}
-          barWidth={40}
           x="label"
           y="value"
           style={{
             data: {
-              fill: '#4e57ca'
-            }
+              fill: '#4e57ca',
+              width:30,
+            },
+            labels: {fontFamily: 'Open Sans', fontSize: 10}
           }}
         />
       </VictoryChart>

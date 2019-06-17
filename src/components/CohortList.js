@@ -5,8 +5,10 @@ import { connect } from 'react-redux';
 
 import Loader from './Loader.js';
 
+
 export class CohortList extends Component {
   render() {
+
     return (
       <div className="wrapper bridge--cohorts">
         <h1>Cohorts</h1>
