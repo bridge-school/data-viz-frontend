@@ -1,3 +1,9 @@
+This project was made for Bridge Cohort 7 by Caroline Pisano, Rachel Qiuqi Li, and Leandra Reid.
+View live here: [http://data-viz-frontend.bridgeschoolapp.io/](http://data-viz-frontend.bridgeschoolapp.io/).
+
+Created with React, Redux, Node, Express, and tested with Enzyme.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
