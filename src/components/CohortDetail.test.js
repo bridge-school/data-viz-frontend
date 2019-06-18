@@ -5,17 +5,12 @@ import Navigation from './Navigation.js';
 
 describe('Cohort Detail', () => {
     // Setup
-    const cohortDetails = {'gender':[
-        {label: "woman", value: 39}, 
-        {label: "non-binary", value: 2}, 
-        {label: "man", value: 2}
-    ]};
     const props = jest.fn();
     const currentButton = 'gender'
     const match = {params : {id: 'cohort-6'}};
     const onChange = jest.fn();
   it('renders div', () => {
-    const wrapper = shallow(<CohortDetail match={match} cohortDetails={cohortDetails[currentButton]} buttons={currentButton} fetchCohort={props} />);
+    const wrapper = shallow(<CohortDetail match={match} cohortDetails={currentButton} buttons={currentButton} fetchCohort={props} />);
     expect(wrapper.find('div.results--container')
         .exists())
         .toBe(true) 
