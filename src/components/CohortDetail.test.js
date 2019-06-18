@@ -2,6 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { CohortDetail } from './CohortDetail.js';
 import Navigation from './Navigation.js';
+import Loader from './Loader.js';
+
 
 describe('Cohort Detail', () => {
     // Setup
@@ -25,4 +27,9 @@ describe('Cohort Detail', () => {
     .simulate('click');
     expect(onChange).toHaveBeenCalled();
   })
+    it('renders loader with cohortLoading = true', () => {
+    const wrapper = shallow(<CohortDetail match={match} cohortDetails={currentButton} buttons={currentButton} fetchCohort={props} cohortLoading={true} />);
+    const mockLoader = wrapper.find(Loader);
+    expect(mockLoader).toHaveLength(1)
+    });
 });
