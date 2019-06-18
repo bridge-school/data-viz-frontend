@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { CohortDetail } from './CohortDetail.js';
 import Navigation from './Navigation.js';
 import Loader from './Loader.js';
+import BarGraph from './BarGraph';
 
 
 describe('Cohort Detail', () => {
@@ -32,4 +33,9 @@ describe('Cohort Detail', () => {
     const mockLoader = wrapper.find(Loader);
     expect(mockLoader).toHaveLength(1)
     });
+    it('renders BarGraph with cohortLoading = false', () => {
+    const wrapper = shallow(<CohortDetail match={match} cohortDetails={currentButton} buttons={currentButton} fetchCohort={props} cohortLoading={false} />);
+    const mockGraph = wrapper.find(BarGraph);
+    expect(mockGraph).toHaveLength(1)
+    })
 });
