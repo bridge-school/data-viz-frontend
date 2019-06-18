@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 import BarGraph from './BarGraph';
 import { fetchCohort } from '../store/actions';
 import Loader from './Loader.js'
-class CohortDetail extends React.Component {
+export class CohortDetail extends React.Component {
   constructor(props) {
     super(props);
     // local state that loads gender graph by default
