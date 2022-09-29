@@ -12,7 +12,7 @@
     "react-scripts": "^3.0.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "victory": "^32.2.3"
+    "victory": "^36.6.8"
   },
   "scripts": {
     "start": "react-scripts start",
